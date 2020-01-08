@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.topjal.denguestp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.topjal.denguestp.SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name="com.topjal.denguestp.IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.topjal.denguestp.RatingActivity" />
+        <activity
+            android:name="com.topjal.denguestp.ImageActivity"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.HotlineActivity"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.LabTestActivity"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.EmergencyActivity.EmInformationDetails"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.EmergencyActivity.EmInformationDetails1"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.EmergencyActivity.EmInformationDetails2"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.EmergencyActivity.EmInformationDetails3"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.GeneralActivity.GeInformationDetails"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.GeneralActivity.GeInformationDetails1"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.GeneralActivity.GeInformationDetails2"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.GeneralActivity.GeInformationDetails3"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.GeneralActivity.GeInformationDetails4"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.GeneralActivity.GeInformationDetails5"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.ExpertActivity.ExpertActivity"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.ExpertActivity.ExpertActivity1"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.ExpertActivity.ExpertActivity2"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.ExpertActivity.ExpertActivity3"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.ExpertActivity.ExpertActivity4"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.ExpertActivity.ExpertActivity5"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.ExpertActivity.ExpertActivity6"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.ExpertActivity.ExpertActivity7"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.ExpertActivity.ExpertActivity8"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.ExpertActivity.ExpertActivity9"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.ExpertActivity.ExpertActivity10"
+            android:parentActivityName="com.topjal.denguestp.MainActivity" />
+        <activity
+            android:name="com.topjal.denguestp.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

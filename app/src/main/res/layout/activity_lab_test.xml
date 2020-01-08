@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LabTestActivity">
+
+        <com.jgabrielfreitas.core.BlurImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/blur"
+            android:src="@drawable/lab_test_img"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorDark"
+            android:orientation="vertical"></RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical"
+            android:background="@drawable/layout_bg">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="150dp"
+                android:padding="6dp">
+
+                <TextView
+                    android:id="@+id/book_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/hind_siliguri_bold"
+                    android:text="জেনে নিন বর্তমানে আপনার করণীয় কী ?"
+                    android:textSize="20dp"
+                    android:padding="12dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#C7C7C7" />
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="@string/banner_id">
+            </com.google.android.gms.ads.AdView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#C7C7C7" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="6dp"
+                android:layout_marginBottom="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/gen_demo2" />
+
+                    <TextView
+                        android:id="@+id/qus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="6dp"
+                        android:justificationMode="inter_word"
+                        android:fontFamily="@font/hind_siliguri_bold"
+                        android:text="@string/question"
+                        android:textSize="18dp"
+                        android:textStyle="italic" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGrouptemperature"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radiotemperatureYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind_siliguri_bold"
+                            android:text="@string/yes"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/radiotemperatureNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/no"
+                            android:fontFamily="@font/hind_siliguri_bold"
+                            android:checked="true"></RadioButton>
+
+                    </RadioGroup>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#C7C7C7" />
+
+                    <TextView
+                        android:id="@+id/qus1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="6dp"
+                        android:justificationMode="inter_word"
+                        android:fontFamily="@font/hind_siliguri_bold"
+                        android:text="@string/question1"
+                        android:textSize="18dp"
+                        android:textStyle="italic" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupBad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioBadYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind_siliguri_bold"
+                            android:text="@string/yes"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/radioBadNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/no"
+                            android:fontFamily="@font/hind_siliguri_bold"
+                            android:checked="true"></RadioButton>
+
+                    </RadioGroup>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#C7C7C7" />
+
+                    <TextView
+                        android:id="@+id/qus2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="6dp"
+                        android:justificationMode="inter_word"
+                        android:fontFamily="@font/hind_siliguri_bold"
+                        android:text="@string/question2"
+                        android:textSize="18dp"
+                        android:textStyle="italic" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupVomiting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioVomitingYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind_siliguri_bold"
+                            android:text="@string/yes"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/radioVomitingNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/no"
+                            android:fontFamily="@font/hind_siliguri_bold"
+                            android:checked="true"></RadioButton>
+
+                    </RadioGroup>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#C7C7C7" />
+
+                    <TextView
+                        android:id="@+id/qus3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="6dp"
+                        android:justificationMode="inter_word"
+                        android:fontFamily="@font/hind_siliguri_bold"
+                        android:text="@string/question3"
+                        android:textSize="18dp"
+                        android:textStyle="italic" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupliquidfood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioLiquidFoodYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind_siliguri_bold"
+                            android:text="@string/yes"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/radioLiquidFoodNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/no"
+                            android:fontFamily="@font/hind_siliguri_bold"
+                            android:checked="true"></RadioButton>
+
+                    </RadioGroup>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#C7C7C7" />
+
+                    <TextView
+                        android:id="@+id/qus4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hind_siliguri_bold"
+                        android:justificationMode="inter_word"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="6dp"
+                        android:text="@string/question4"
+                        android:textSize="18dp"
+                        android:textStyle="italic" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupBellyPain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioBellyPainYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind_siliguri_bold"
+                            android:text="@string/yes"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/radioBellyPainNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/no"
+                            android:fontFamily="@font/hind_siliguri_bold"
+                            android:checked="true"></RadioButton>
+
+                    </RadioGroup>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#C7C7C7" />
+
+                    <TextView
+                        android:id="@+id/qus5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="6dp"
+                        android:justificationMode="inter_word"
+                        android:fontFamily="@font/hind_siliguri_bold"
+                        android:text="@string/question5"
+                        android:textSize="18dp"
+                        android:textStyle="italic" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupDiapiah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioDiariaYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind_siliguri_bold"
+                            android:text="@string/yes"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/radioDiariaNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/no"
+                            android:fontFamily="@font/hind_siliguri_bold"
+                            android:checked="true"></RadioButton>
+
+                    </RadioGroup>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#C7C7C7" />
+
+                    <TextView
+                        android:id="@+id/qus6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="6dp"
+                        android:justificationMode="inter_word"
+                        android:fontFamily="@font/hind_siliguri_bold"
+                        android:text="@string/question6"
+                        android:textSize="16dp"
+                        android:textStyle="italic" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupRedCircle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <RadioButton
+                            android:id="@+id/radioredCircleYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind_siliguri_bold"
+                            android:text="@string/yes"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/radioredCircleNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/no"
+                            android:fontFamily="@font/hind_siliguri_bold"
+                            android:checked="true"></RadioButton>
+
+                    </RadioGroup>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#C7C7C7" />
+
+                    <TextView
+                        android:id="@+id/qus7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="6dp"
+                        android:justificationMode="inter_word"
+                        android:fontFamily="@font/hind_siliguri_bold"
+                        android:text="@string/question7"
+                        android:textSize="16dp"
+                        android:textStyle="italic" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupWeek"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <RadioButton
+                            android:id="@+id/radioWeekYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind_siliguri_bold"
+                            android:text="@string/yes"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/radioWeekNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/no"
+                            android:fontFamily="@font/hind_siliguri_bold"
+                            android:checked="true"></RadioButton>
+
+                    </RadioGroup>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#C7C7C7" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp">
+                        <TextView
+                            android:id="@+id/labtestResult"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginStart="6dp"
+                            android:justificationMode="inter_word"
+                            android:fontFamily="@font/hind_siliguri_bold"
+                            android:text="বেশি করে তরল খাবার গ্রহণ ও বিশুদ্ধ পানি পান করুন। "
+                            android:textSize="16dp"
+                            android:textColor="@color/colorAccent"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#C7C7C7" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/layout_btn1"
+                        android:layout_height="40dp"
+                        android:weightSum="2">
+
+                        <Button
+                            android:id="@+id/btnLabTestClear"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/layout_btn"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="Clear"
+                            android:textColor="@color/colorPrimary"
+                            android:fontFamily="@font/hind_siliguri_bold"
+                            android:textStyle="bold" />
+
+
+                        <View
+                            android:layout_width=".5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/colorWhite" />
+
+                        <Button
+                            android:id="@+id/btnLabTestSubmit"
+                            android:layout_width="wrap_content"
+                            android:text="সাবমিট করুন"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/layout_btn"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            android:fontFamily="@font/hind_siliguri_bold"
+                            android:layout_weight="1"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/author_image"
+            android:layout_width="130dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="14dp"
+            android:layout_height="130dp"
+            android:src="@drawable/lab_test_img"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="2dp" />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
